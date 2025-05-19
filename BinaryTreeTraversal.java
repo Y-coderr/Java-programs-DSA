@@ -9,18 +9,18 @@ public class BinaryTreeTraversal{
     }
 }
 
-    public static preOrdered(Node root){
+    public static Node preOrdered(Node root){
         if(root == null){
-            return;
+            return null;
         }
         System.out.print(root.data + " ");
         preOrdered(root.left);
         preOrdered(root.right);
     }
 
-    public static levelOrderTraversal(Node root){
+    public static Node levelOrderTraversal(Node root){
         if(root == null){
-            return ;
+            return null;
         }
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
