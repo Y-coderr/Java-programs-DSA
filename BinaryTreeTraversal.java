@@ -25,7 +25,7 @@ public class BinaryTreeTraversal{
              return newNode;
         }
 
-        static void preOrder(Node root){
+        static void preOrder(Node root){     //linear time O(n)
             System.out.println(root.data+" ");
             preOrder(root.left);
             preOrder(root.right);
