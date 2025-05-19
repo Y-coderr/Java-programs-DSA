@@ -36,6 +36,12 @@ public class BinaryTreePreorder {
             System.out.println(root.data+" "); 
             preOrder(root.right);
         }
+
+        static void postOrder(Node root){
+            preOrder(root.left); 
+            preOrder(root.right);
+            System.out.println(root.data+" ");
+        }
     }
 
 
