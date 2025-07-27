@@ -1,0 +1,21 @@
+class Solution {
+    public long maxScore(int[] nums1, int[] nums2, int k) {
+        PriorityQueue<Integer> pq1 = new PriorityQueue<>(Comparator.reverseOrder());
+        PriorityQueue<Integer> pq2 = new PriorityQueue<>();
+
+        for(int i=0,j=0;i<nums1.length&&j<nums2.length ; i++,j++){
+              pq1.add(nums1[i]);
+              pq2.add(nums2[j]);
+        }
+        long sum1=0;
+        long min=pq2.poll();
+
+        for(int i=0;i<k;i++){
+            sum1 += pq1.poll();
+            
+        }
+        long max = sum1 * min;
+        return max;
+        
+    }
+}  

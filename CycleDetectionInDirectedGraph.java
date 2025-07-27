@@ -14,7 +14,7 @@ public class CycleDetectionInDirectedGraph {
             //this.wt = w;
         }
     }
-
+    
     public static boolean isCycle(ArrayList<Edge>[] graph) {
         boolean[] vis = new boolean[graph.length];
         boolean[] stack = new boolean[graph.length];
@@ -29,7 +29,7 @@ public class CycleDetectionInDirectedGraph {
         }
         return false;
 
-    }
+    } 
 
     public static boolean isCycleUtil(ArrayList<Edge>[] graph, int curr, boolean vis[], boolean stack[]) {
         vis[curr] = true;

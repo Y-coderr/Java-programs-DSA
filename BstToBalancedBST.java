@@ -4,7 +4,7 @@ import org.w3c.dom.Node;
 
 
 public class BstToBalancedBST {
-     static class TreeNode {
+        class TreeNode {
         int data;
         TreeNode left;
         TreeNode right;
@@ -47,7 +47,7 @@ public class BstToBalancedBST {
 
         return root;
     }
-    public static void main(String[] args) {
+    public void main(String[] args) {
         TreeNode root = new TreeNode (8);
         root.left = new TreeNode(6) ;
         root.left.left = new TreeNode(5);

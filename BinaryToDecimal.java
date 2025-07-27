@@ -8,7 +8,7 @@ public class BinaryToDecimal{
         while (0<n){
             int lastdigit= n % 10;
             dec = dec+(lastdigit * (int)Math.pow(2,pow));
-            n = n/10;
+            n = n/10; // removing last digit
             
             pow ++;
         }
