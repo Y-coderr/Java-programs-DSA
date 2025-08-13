@@ -27,7 +27,7 @@ Each file is **self-contained** and can be compiled/run independently.
 ## 🛠 How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/Java-DSA-Practice.git
+git clone https://github.com/Y-coderr/Java-DSA-Practice.git
 
 # Navigate to the project
 cd Java-DSA-Practice
